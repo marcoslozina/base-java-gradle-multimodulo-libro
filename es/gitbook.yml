@@ -1,0 +1,11 @@
+root: .
+structure:
+  readme: es.md
+  summary: SUMMARY.md
+languages:
+  es:
+    label: Español
+    path: .
+    title: Gradle Profesional Java y Spring
+    author: Marcos Lozina
+    cover: es/images/portada.png

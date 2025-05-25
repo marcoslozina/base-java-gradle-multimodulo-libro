@@ -1,0 +1,45 @@
+# Build directories
+/build/
+/target/
+/out/
+
+# Gradle
+.gradle
+build/
+
+# Maven
+target/
+
+# Node (si tu proyecto tiene algo de frontend)
+node_modules/
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Java
+*.jar
+*.war
+*.ear
+
+# VSCode (por si algún colaborador usa VS Code)
+.vscode/
+
+# Environment files
+.env
+.env.*
+
+# Temporary files
+*.swp
+*~
+# Ignorar archivos de configuración de IntelliJ/IDEA
+.idea/
+*.iml
+
+# Ignorar archivos ZIP
+*.zip
+=======
+# OS generated
+ehthumbs.db
+Desktop.ini
+
