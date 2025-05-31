@@ -1,3 +1,4 @@
+
 # 📋 Changelog
 
 ## [1.0.0] - 2025-05-26
@@ -17,4 +18,4 @@
 - Estructura del eBook creada: `chapters`, `assets`, `templates`
 - README del eBook generado con subtítulo explicativo
 - Licencia actualizada a “Todos los derechos reservados” (ISBN, DNDA, Safe Creative)
-- Registro del libro con título: * Java Multimódulo con Gradle y Spring Boot*
+- Registro del libro con título: *Java Multimódulo con Gradle y Spring Boot*

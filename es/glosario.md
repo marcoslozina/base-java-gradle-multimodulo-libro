@@ -6,7 +6,7 @@ Este glosario recopila los términos clave utilizados a lo largo del eBook para 
 ---
 
 ### 🔧 Gradle
-Herramienta moderna de automatización de builds para JVM y otros entornos. Permite compilar, testear, empaquetar y desplegar aplicaciones. Destaca por su rendimiento incremental, uso de cache y flexibilidad mediante DSL en Kotlin o Groovy.
+Herramienta moderna de automatización de builds para la JVM y otros entornos. Permite compilar, testear, empaquetar y desplegar aplicaciones. Destaca por su rendimiento incremental, uso de caché y flexibilidad mediante DSL en Kotlin o Groovy.
 
 ---
 
@@ -16,7 +16,7 @@ Lenguaje específico de dominio que permite describir procesos complejos de form
 ---
 
 ### 📦 BOM (Bill of Materials)
-Conjunto de versiones compatibles entre dependencias, centralizado en un archivo compartido. Gradle lo interpreta automáticamente si se usa Spring Boot o `io.spring.dependency-management`.
+Conjunto de versiones compatibles entre dependencias, centralizado en un archivo compartido. Gradle lo interpreta automáticamente si se usa Spring Boot o el plugin `io.spring.dependency-management`.
 
 ---
 
@@ -31,7 +31,7 @@ Componente reutilizable que agrega tareas, configuraciones o convenciones al pro
 ---
 
 ### 📚 Dependencia
-Biblioteca externa o interna que tu proyecto necesita para compilar o ejecutarse. Se declara con configuraciones como `implementation`, `testImplementation`, `runtimeOnly`, etc.
+Biblioteca externa o interna que el proyecto necesita para compilar o ejecutarse. Se declara con configuraciones como `implementation`, `testImplementation`, `runtimeOnly`, entre otras.
 
 ---
 
@@ -52,12 +52,12 @@ CD (Despliegue Continuo) extiende esta automatización hasta producción. Herram
 ---
 
 ### 🧱 Multimódulo
-Organización del proyecto en submódulos independientes y acoplados por configuración. Favorece el testing aislado, la reutilización y la escalabilidad en arquitecturas complejas.
+Organización del proyecto en submódulos independientes, conectados por configuración. Favorece el testing aislado, la reutilización y la escalabilidad en arquitecturas complejas.
 
 ---
 
 ### 🧰 Monorepo
-Estructura de repositorio único que contiene múltiples módulos o servicios. Facilita control de versiones y consistencia entre proyectos relacionados.
+Estructura de repositorio único que contiene múltiples módulos o servicios. Facilita el control de versiones y la consistencia entre proyectos relacionados.
 
 ---
 
@@ -77,7 +77,7 @@ Archivo de propiedades globales o por entorno. Se usa para definir versiones, fl
 ---
 
 ### 📂 `settings.gradle.kts`
-Archivo que configura el proyecto raíz, el nombre del proyecto y los submódulos incluidos. También puede aplicar lógica condicional para builds compuestos.
+Archivo que configura el proyecto raíz, su nombre y los submódulos incluidos. También puede aplicar lógica condicional para builds compuestos.
 
 ---
 

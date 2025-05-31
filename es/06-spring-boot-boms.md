@@ -18,9 +18,11 @@ El BOM es un archivo que declara un conjunto de versiones estables y compatibles
 Gradle utiliza el BOM cuando aplicamos uno de los siguientes mecanismos:
 
 - El plugin oficial de Spring Boot:
-  ```kotlin
-  id("org.springframework.boot") version "3.2.1"
-  ```
+
+```kotlin
+id("org.springframework.boot") version "3.2.1"
+```
+
 - El plugin `io.spring.dependency-management` (en desuso para versiones modernas).
 
 En tu proyecto (`gradle-profesional-ejemplo`), la declaración actual de plugins es la siguiente:
@@ -150,4 +152,4 @@ dependencies {
 - ✅ Se usa `implementation` salvo casos justificados con `api` o `compileOnly`
 - ✅ Se automatiza la verificación de versiones con `dependencyUpdates`
 - ✅ Se ejecutan tests luego de cualquier actualización de versión
-- ✅ El equipo comprende y respeta la política del BOM 
+- ✅ El equipo comprende y respeta la política del BOM

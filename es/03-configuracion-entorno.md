@@ -1,4 +1,5 @@
-# 🛠️ Configuración profesional del entorno
+
+# 3. 🛠️ Configuración profesional del entorno
 
 ## 🎯 Objetivo
 
@@ -120,7 +121,6 @@ tasks.register("hello") {
 ./gradlew hello
 ```
 
-
 ---
 
 ## 🧩 Compatibilidad entre versiones de Java, Gradle y Spring Boot
@@ -147,8 +147,6 @@ Por eso, se recomienda utilizar **Java 21 LTS**, que sí cuenta con **compatibil
 | SDKMAN                      | ✅ Compatible con JDK 21 | ⚠️ JDK 23 no siempre disponible |
 | Plug-ins (Checkstyle, SpotBugs, etc.) | ✅ Funciona correctamente | ⚠️ Algunos no reconocen Java 23 |
 
-
-
 ---
 
 ## ✅ Checklist de la sección
@@ -160,4 +158,4 @@ Por eso, se recomienda utilizar **Java 21 LTS**, que sí cuenta con **compatibil
 - ✅ 🧹 Agregué el archivo `.editorconfig` con reglas de estilo
 - ✅ 💻 Verifiqué que IntelliJ IDEA usa **Kotlin DSL (`.kts`)** y **JDK 21**
 - ✅ 🧪 Ejecuté una tarea simple (`hello`) desde Gradle
-- ✅ 📊 Analicé la tabla de compatibilidad y comprendí por qué **Java 21** es recomendado  
+- ✅ 📊 Analicé la tabla de compatibilidad y comprendí por qué **Java 21** es recomendado

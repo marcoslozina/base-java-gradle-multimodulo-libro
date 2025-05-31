@@ -1,4 +1,5 @@
-# Summary
+
+# Java Multimódulo para Backends Modernos
 
 * [📘 ¿Por qué Gradle puede transformar tu proyecto?](01-introduccion-gradle.md)
 * [🤔 Gradle vs Maven: ¿cuál elegir y por qué?](02-gradle-vs-maven.md)
@@ -13,3 +14,4 @@
 * [🏁 Conclusión](11-conclusion.md)
 * [📘 Glosario](glosario.md)
 * [🤝 Recursos, comunidad y próximos pasos](12-recursos-y-comunidad.md)
+* [🔒 Registro legal y publicación](13-registro-legal.md)

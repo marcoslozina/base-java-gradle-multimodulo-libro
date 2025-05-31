@@ -1,5 +1,5 @@
 
-# 📘 Conclusión
+# 11. 📘 Conclusión
 
 A lo largo de este eBook recorriste los fundamentos esenciales para configurar proyectos Java modernos con Gradle. Este camino te permitió construir una base sólida, escalable y mantenible, clave para afrontar desarrollos profesionales en equipos o de forma individual.
 
@@ -19,7 +19,8 @@ A lo largo de este eBook recorriste los fundamentos esenciales para configurar p
 
 ## 🎯 ¿Y ahora qué?
 
-Este eBook fue concebido como **punto de partida profesional**. Si llegaste hasta aquí, tenés los conocimientos fundamentales para abordar proyectos reales con herramientas modernas y prácticas sólidas.
+Este eBook fue concebido como **punto de partida profesional**.  
+Si llegaste hasta aquí, tenés los conocimientos fundamentales para abordar proyectos reales con herramientas modernas y prácticas sólidas.
 
 ---
 

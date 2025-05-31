@@ -1,3 +1,4 @@
+
 # 5. `buildSrc` y su rol en la arquitectura del build
 
 El directorio `buildSrc/` en Gradle es una herramienta estratégica para organizar la lógica de construcción de forma escalable, modular y centralizada. Al estar diseñado como un subproyecto especial, cualquier clase o constante que se declare en él estará disponible globalmente en todos los `build.gradle.kts`.
@@ -132,4 +133,4 @@ Comprender el orden en que Gradle evalúa y compila los distintos archivos es cl
 - ✅ 🧪 Verifiqué con `./gradlew build` que no hay errores de compilación
 - ✅ 🔍 Confirmé que el IDE autocompleta las constantes definidas en `buildSrc`
 - ✅ ⚠️ Comprendí que `buildSrc` no se puede usar en `build.gradle.kts` raíz
-- ✅ 🔄 Entendí el orden de evaluación: settings → properties → buildSrc → build.gradle.kts 
+- ✅ 🔄 Entendí el orden de evaluación: settings → properties → buildSrc → build.gradle.kts

@@ -153,4 +153,4 @@ No solo previene errores, sino que establece una base sólida para escalar con c
 - ✅ Configuré un pipeline de CI con GitHub Actions
 - ✅ Consolidé tareas en comandos personalizados como `testCoverage`
 - ✅ Verifiqué que todos los módulos se compilan correctamente en CI
-- ✅ Aseguré que los reportes se mantengan actualizados con cada commit  
+- ✅ Aseguré que los reportes se mantengan actualizados con cada commit

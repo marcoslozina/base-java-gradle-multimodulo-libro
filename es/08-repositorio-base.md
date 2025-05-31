@@ -18,6 +18,8 @@ Este repositorio constituye una base profesional para proyectos en Java con Spri
 - Gradle con Kotlin DSL (`.kts`)
 - Toolchain configurado desde `buildSrc` con `JavaLanguageVersion.of(...)`
 
+---
+
 ### 🧱 Estructura del proyecto
 
 Organizado como un proyecto **multimódulo** con arquitectura hexagonal:
@@ -39,8 +41,7 @@ include("application", "domain", "infrastructure", "config")
 El proyecto aplica las siguientes convenciones:
 
 - `gradle.properties`: define `springBootVersion`, `javaVersion`, `group`, entre otros
-- `buildSrc/`: contiene clases como `Dependencies.kt`, `Versions.kt`, `Plugins.kt` y `CustomTasks.kt`  
-  Se aplican automáticamente al resto del proyecto sin duplicación
+- `buildSrc/`: contiene clases como `Dependencies.kt`, `Versions.kt`, `Plugins.kt` y `CustomTasks.kt`
 
 ```kotlin
 val springBootVersion by extra("3.2.5")
@@ -82,7 +83,6 @@ El repositorio contiene archivos esenciales para proyectos maduros:
 
 ---
 
-
 ## 📚 Recursos adicionales
 
 - 📘 [Documentación oficial de Gradle](https://docs.gradle.org/current/userguide/)
@@ -112,4 +112,4 @@ El repositorio contiene archivos esenciales para proyectos maduros:
 - ✅ Comprendí el rol de `buildSrc` y sus clases (`Dependencies`, `Plugins`, `CustomTasks`)
 - ✅ Ejecuté tareas como `printVersion` desde consola
 - ✅ Exploré y edité valores en `gradle.properties`
-- ✅ Confirmé que el proyecto compila correctamente con `./gradlew build`  
+- ✅ Confirmé que el proyecto compila correctamente con `./gradlew build`

@@ -87,4 +87,4 @@ En el próximo módulo vas a implementar la Arquitectura Hexagonal paso a paso, 
 - ✅ Ejecuté comandos Gradle específicos para construir módulos aislados
 - ✅ Probé ejecutar `bootRun` desde módulos con clase principal de Spring Boot
 - ✅ Verifiqué que la lógica de dominio no depende de frameworks ni tecnologías externas
-- ✅ Me siento preparado para avanzar con una implementación real en el siguiente capítulo  
+- ✅ Me siento preparado para avanzar con una implementación real en el siguiente capítulo

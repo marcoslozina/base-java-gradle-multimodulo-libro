@@ -1,3 +1,4 @@
+
 # 12. Recursos, comunidad y próximos pasos
 
 ---

@@ -1,3 +1,4 @@
+
 # 2. Gradle y Maven: Dos caminos para construir proyectos Java
 
 Gradle y Maven son las dos herramientas de automatización de builds más populares en el ecosistema Java. Ambas permiten compilar código, gestionar dependencias, empaquetar artefactos y ejecutar pruebas. Aunque sus filosofías y mecanismos internos difieren, **comparten el objetivo de automatizar tareas repetitivas y asegurar builds consistentes**.
@@ -5,6 +6,8 @@ Gradle y Maven son las dos herramientas de automatización de builds más popula
 ---
 
 ## 🔍 Comparativa general
+
+<br>
 
 | **Característica**         | **Gradle**                           | **Maven**                     |
 |----------------------------|--------------------------------------|-------------------------------|
@@ -114,5 +117,3 @@ La elección entre uno y otro debe basarse en las **necesidades del equipo, la c
 - ✅ 📁 Creé la carpeta `02-gradle-y-maven` en mi proyecto con los ejemplos incluidos
 - ✅ ⚖️ Leí los benchmarks y casos reales como el de LinkedIn
 - ✅ 🧪 Reflexioné sobre qué beneficios traería Gradle a un proyecto Maven actual
-
----

@@ -1,8 +1,9 @@
+![Portada](es/images/portada2.png)
 # 📘 Java Multimódulo con Gradle y Spring Boot
 
 **Una guía práctica para construir backends modernos, modulares y mantenibles**
 
-Este repositorio contiene el contenido del eBook **Plantilla Java Multimódulo con Gradle y Spring Boot**, una guía práctica para construir backends modernos, modulares y mantenibles con tecnologías actuales del ecosistema Java.
+Este repositorio contiene el contenido del eBook ** Java Multimódulo con Gradle y Spring Boot**, una guía práctica para construir backends modernos, modulares y mantenibles con tecnologías actuales del ecosistema Java.
 
 ## 🧱 ¿Qué vas a encontrar en este libro?
 

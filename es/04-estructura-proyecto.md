@@ -1,4 +1,5 @@
-# 3. 🏗 Proyecto profesional Gradle
+
+# 4. 🏗 Proyecto profesional Gradle
 
 En esta sección comenzamos la construcción progresiva de un proyecto multimódulo profesional con Gradle, aplicando buenas prácticas de organización y separación de responsabilidades.
 
@@ -120,4 +121,4 @@ allprojects {
 - ✅ 🪪 Configuré `gradle.properties` con `group`, `version` y `javaVersion`
 - ✅ 📦 Agregué el archivo `build.gradle.kts` con repositorios comunes
 - ✅ 🧪 Verifiqué que `./gradlew build` se ejecuta correctamente
-- ✅ 🧭 Comprendí el propósito de cada módulo en la arquitectura 
+- ✅ 🧭 Comprendí el propósito de cada módulo en la arquitectura

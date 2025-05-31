@@ -1,3 +1,4 @@
+
 # 1. ¿Por qué usar Gradle en proyectos profesionales?
 
 > *“¿Tu proyecto es lento, difícil de mantener o no escala? Quizás el problema no es tu código... sino tu sistema de build.”*
@@ -8,11 +9,15 @@ Gradle es una **herramienta moderna de automatización de builds** que se destac
 
 ## 🆚 ¿Qué lo hace diferente?
 
+<br>
+
 A diferencia de herramientas **declarativas rígidas**, Gradle adopta un enfoque **dinámico**, permitiendo definir **lógicas de build reutilizables** que se adaptan a cada etapa del ciclo de vida de la aplicación.
 
 ---
 
 ## 🧠 Ventajas clave de Gradle
+
+---
 
 ### 🔤 DSL en Kotlin o Groovy
 
@@ -108,9 +113,10 @@ Gradle no es solo una alternativa moderna a Maven o Ant:
 > 💬 ¿Tu proyecto actual usa Maven, Ant o scripts manuales?
 > - Hacé una lista de las tareas repetitivas que podrían automatizarse con Gradle.
 > - Buscá un proyecto open source que use Gradle y analizá su estructura.
-> 
-> 
-> ## ✅ Checklist de la sección
+
+---
+
+## ✅ Checklist de la sección
 
 - ✅ Entendí las ventajas del modelo dinámico y basado en tareas de Gradle
 - ✅ Comprendí la diferencia entre Kotlin DSL y Groovy DSL

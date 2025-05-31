@@ -1,8 +1,7 @@
-
-# 📘 base-java-gradle-multimodulo
+# 📘 Java Multimódulo para Backends Modernos
 
 Este proyecto es una base profesional para desarrollar aplicaciones en **Java 21** con **Gradle Kotlin DSL**, siguiendo buenas prácticas modernas de modularización, automatización y arquitectura limpia.  
-Es el repositorio que acompaña el eBook 📗 *"Base Java Gradle Multimódulo"*.
+Es el repositorio que acompaña el eBook 📗 *"Java Multimódulo para Backends Modernos"*.
 
 ---
 
@@ -84,6 +83,6 @@ Sumate a nuestra comunidad en Discord:
 
 Completá este breve formulario para dejar tu feedback sobre el eBook:
 
-👉 **[Formulario de Feedback – Base Java Gradle Multimódulo](https://forms.gle/2JT8CqevhfwvwciZA)**
+👉 **[Formulario de Feedback – Java Multimódulo para Backends Modernos](https://forms.gle/2JT8CqevhfwvwciZA)**
 
 <img src="images/portada.png" alt="Portada del eBook" width="600"/>

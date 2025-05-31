@@ -1,6 +1,5 @@
 
-# 7. 🧠 Buenas prácticas y errores comunes y 
-
+# 7. 🧠 Buenas prácticas y errores comunes
 
 ---
 
@@ -8,67 +7,79 @@
 
 > A continuación se detallan buenas prácticas clave acompañadas de ejemplos concretos en Kotlin DSL (`build.gradle.kts`).
 
-1. **Centralizar configuración en `buildSrc/`**  
-   📌 Ejemplo:
+1. **Centralizar configuración en `buildSrc/`**
 
-   ```kotlin
-   // buildSrc/src/main/kotlin/Dependencies.kt
-   object Deps {
-       const val springBootStarterWeb = "org.springframework.boot:spring-boot-starter-web"
-   }
+📌 Ejemplo:
 
-   // build.gradle.kts
-   dependencies {
-       implementation(Deps.springBootStarterWeb)
-   }
-   ```
+```kotlin
+// buildSrc/src/main/kotlin/Dependencies.kt
+object Deps {
+    const val springBootStarterWeb = "org.springframework.boot:spring-boot-starter-web"
+}
 
-   Organizá las dependencias y convenciones en clases como `Dependencies.kt` o `Plugins.kt`. Esto reduce la duplicación y mejora la mantenibilidad del proyecto.
+// build.gradle.kts
+dependencies {
+    implementation(Deps.springBootStarterWeb)
+}
+```
 
-2. **Reutilizar configuración con `subprojects {}` o `allprojects {}`**  
-   Estos bloques permiten aplicar reglas comunes (plugins, repositorios, compiladores, encoding, etc.) a todos los módulos, manteniendo scripts más limpios.
+Organizá las dependencias y convenciones en clases como `Dependencies.kt` o `Plugins.kt`. Esto reduce la duplicación y mejora la mantenibilidad del proyecto.
 
-3. **Utilizar Kotlin DSL (`.kts`) para los scripts de build**  
-   El DSL tipado permite autocompletado, validación en tiempo de compilación y menor propensión a errores. Ideal si usás IntelliJ IDEA o Android Studio.
+2. **Reutilizar configuración con `subprojects {}` o `allprojects {}`**
 
-4. **Definir versiones y propiedades en `gradle.properties`**  
-   📌 Ejemplo:
+Estos bloques permiten aplicar reglas comunes (plugins, repositorios, compiladores, encoding, etc.) a todos los módulos, manteniendo scripts más limpios.
 
-   ```properties
-   springBootVersion=3.2.1
-   ```
+3. **Utilizar Kotlin DSL (`.kts`) para los scripts de build**
 
-   ```kotlin
-   plugins {
-       id("org.springframework.boot") version "${springBootVersion}"
-   }
-   ```
+El DSL tipado permite autocompletado, validación en tiempo de compilación y menor propensión a errores. Ideal si usás IntelliJ IDEA o Android Studio.
 
-   Evitá hardcodear versiones en los scripts. Usar `gradle.properties` centraliza valores y permite sobrescribirlos según el entorno (CI/CD, local, etc.).
+4. **Definir versiones y propiedades en `gradle.properties`**
 
-5. **Automatizar la detección de actualizaciones**  
-   Incorporá el plugin `com.github.ben-manes.versions` y tareas personalizadas para mantener dependencias actualizadas de forma segura.
+📌 Ejemplo:
 
-6. **Configurar `build scans` para diagnósticos avanzados**  
-   Activar los *build scans* (`--scan`) ayuda a diagnosticar cuellos de botella y errores complejos en pipelines de CI o builds lentos.
+```properties
+springBootVersion=3.2.1
+```
 
-7. **Usar convenciones de nombres coherentes en módulos y carpetas**  
-   Mantener un esquema claro (`application`, `domain`, `infrastructure`, etc.) mejora la comprensión del proyecto, especialmente en equipos grandes.
+```kotlin
+plugins {
+    id("org.springframework.boot") version "${springBootVersion}"
+}
+```
 
-8. **Aplicar convenciones compartidas con `convention plugins`**  
-   En vez de repetir configuraciones con `subprojects {}`, podés usar plugins Gradle personalizados para aplicar convenciones limpias y versionables.
+Evitá hardcodear versiones en los scripts. Usar `gradle.properties` centraliza valores y permite sobrescribirlos según el entorno (CI/CD, local, etc.).
 
-9. **Documentar las tareas personalizadas**  
-   Usar `description` y `group` en cada `task` facilita el descubrimiento de funcionalidades dentro del build.
+5. **Automatizar la detección de actualizaciones**
 
-10. **Aislar configuraciones específicas por entorno (local, CI, producción)**  
-    Usar perfiles (`-Pprofile=ci`) o propiedades externas para adaptar el comportamiento sin modificar los scripts.
+Incorporá el plugin `com.github.ben-manes.versions` y tareas personalizadas para mantener dependencias actualizadas de forma segura.
 
-11. **Versionar tus builds con lógica semántica o Git tags**  
-    Implementá tareas para que el `version` del proyecto se base en un tag o commit, lo que ayuda a automatizar releases y evitar errores humanos.
+6. **Configurar `build scans` para diagnósticos avanzados**
 
-12. **Evitar tareas inútiles con `onlyIf {}` o condiciones inteligentes**  
-    Reducí tiempos de build asegurando que las tareas realmente se ejecuten solo cuando corresponde.
+Activar los *build scans* (`--scan`) ayuda a diagnosticar cuellos de botella y errores complejos en pipelines de CI o builds lentos.
+
+7. **Usar convenciones de nombres coherentes en módulos y carpetas**
+
+Mantener un esquema claro (`application`, `domain`, `infrastructure`, etc.) mejora la comprensión del proyecto, especialmente en equipos grandes.
+
+8. **Aplicar convenciones compartidas con `convention plugins`**
+
+En vez de repetir configuraciones con `subprojects {}`, podés usar plugins Gradle personalizados para aplicar convenciones limpias y versionables.
+
+9. **Documentar las tareas personalizadas**
+
+Usar `description` y `group` en cada `task` facilita el descubrimiento de funcionalidades dentro del build.
+
+10. **Aislar configuraciones específicas por entorno (local, CI, producción)**
+
+Usar perfiles (`-Pprofile=ci`) o propiedades externas para adaptar el comportamiento sin modificar los scripts.
+
+11. **Versionar tus builds con lógica semántica o Git tags**
+
+Implementá tareas para que el `version` del proyecto se base en un tag o commit, lo que ayuda a automatizar releases y evitar errores humanos.
+
+12. **Evitar tareas inútiles con `onlyIf {}` o condiciones inteligentes**
+
+Reducí tiempos de build asegurando que las tareas realmente se ejecuten solo cuando corresponde.
 
 ---
 
@@ -76,58 +87,61 @@
 
 > A continuación se presentan errores frecuentes junto con ejemplos que deberías evitar.
 
-1. **Usar SDKMAN con versiones inestables como Java 23**  
-   Algunas herramientas del ecosistema Gradle pueden no ofrecer soporte inmediato. Usar versiones estables minimiza errores con plugins o builds rotos.
+1. **Usar SDKMAN con versiones inestables como Java 23**
 
-2. **No fijar versiones de plugins o dependencias**  
-   ❌ Ejemplo:
+Algunas herramientas del ecosistema Gradle pueden no ofrecer soporte inmediato. Usar versiones estables minimiza errores con plugins o builds rotos.
 
-   ```kotlin
-   implementation("org.springframework.boot:spring-boot-starter-web:+")
-   ```
+2. **No fijar versiones de plugins o dependencias**
 
-   ✅ Corrección:
+❌ Ejemplo:
 
-   ```kotlin
-   implementation("org.springframework.boot:spring-boot-starter-web:3.2.1")
-   ```
+```kotlin
+implementation("org.springframework.boot:spring-boot-starter-web:+")
+```
 
-   Dejar versiones flotantes (`+`) puede provocar builds no reproducibles o fallos inesperados si las versiones cambian en los repositorios.
+✅ Corrección:
 
-3. **Hardcodear strings de dependencias en cada módulo**  
-   ❌ Ejemplo:
+```kotlin
+implementation("org.springframework.boot:spring-boot-starter-web:3.2.1")
+```
 
-   ```kotlin
-   implementation("org.springframework.boot:spring-boot-starter-data-jpa")
-   ```
+Dejar versiones flotantes (`+`) puede provocar builds no reproducibles o fallos inesperados si las versiones cambian en los repositorios.
 
-   ✅ Corrección (centralizado en buildSrc):
+3. **Hardcodear strings de dependencias en cada módulo**
 
-   ```kotlin
-   implementation(Deps.springBootStarterDataJpa)
-   ```
+❌ Ejemplo:
 
-   Esto incrementa el esfuerzo de mantenimiento y genera inconsistencias. En su lugar, usá constantes centralizadas (por ejemplo, en `Deps.kt`).
+```kotlin
+implementation("org.springframework.boot:spring-boot-starter-data-jpa")
+```
 
-4. **No crear tareas personalizadas reutilizables**  
-   Repetir pasos manuales en scripts o pipelines puede evitarse con tareas Gradle bien definidas y parametrizadas (`register("lintAll") { ... }`).
+✅ Corrección (centralizado en buildSrc):
 
-5. **No limpiar ni estructurar los scripts**  
-   Un `build.gradle.kts` desordenado o con responsabilidades mezcladas dificulta su lectura, testeo y evolución.
+```kotlin
+implementation(Deps.springBootStarterDataJpa)
+```
+
+Esto incrementa el esfuerzo de mantenimiento y genera inconsistencias. En su lugar, usá constantes centralizadas (por ejemplo, en `Deps.kt`).
+
+4. **No crear tareas personalizadas reutilizables**
+
+Repetir pasos manuales en scripts o pipelines puede evitarse con tareas Gradle bien definidas y parametrizadas (`register("lintAll") { ... }`).
+
+5. **No limpiar ni estructurar los scripts**
+
+Un `build.gradle.kts` desordenado o con responsabilidades mezcladas dificulta su lectura, testeo y evolución.
 
 ---
 
----
-
-### 🧠 Ejercicio propuesto
+## 🧠 Ejercicio propuesto
 
 **Objetivo**: Evaluar la calidad de un build existente.
 
-> ✅ Revisá un `build.gradle.kts` que hayas hecho antes.
->   - Identificá al menos 3 malas prácticas y corregilas según lo aprendido:
-      >     - Plugins redundantes
->     - Dependencias duplicadas
->     - Código repetido entre módulos
+> ✅ Revisá un `build.gradle.kts` que hayas hecho antes.  
+> Identificá al menos 3 malas prácticas y corregilas según lo aprendido:
+> - Plugins redundantes
+> - Dependencias duplicadas
+> - Código repetido entre módulos
 
 ---
 
@@ -142,4 +156,4 @@
 - ✅ Se aplican convenciones consistentes en nombres y estructura de módulos
 - ✅ Las tareas están documentadas con `description` y `group`
 - ✅ Se aprovechan features como `onlyIf` y `build scans` para optimizar procesos
-- ✅ Se utiliza versionado semántico y adaptabilidad según entorno  
+- ✅ Se utiliza versionado semántico y adaptabilidad según entorno

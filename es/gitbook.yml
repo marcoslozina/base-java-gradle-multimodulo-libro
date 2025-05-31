@@ -6,6 +6,6 @@ languages:
   es:
     label: Español
     path: .
-    title: Gradle Profesional Java y Spring
+    title: Java Multimódulo para Backends Modernos
     author: Marcos Lozina
     cover: es/images/portada.png
