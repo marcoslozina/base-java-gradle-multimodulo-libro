@@ -1,11 +1,13 @@
 root: .
+
 structure:
-  readme: ./00-resumen.md
+  readme: ./00-resumen.md  # Este archivo NO se incluye en SUMMARY.md, solo evita que GitBook use README.md como portada
   summary: SUMMARY.md
+
 languages:
   es:
     label: Español
     path: .
-    title: Java Multimódulo para Backends Modernos
+    title: " "               # Esto evita que GitBook genere una portada con el título "Java Multimódulo"
     author: Marcos Lozina
     cover: es/images/portada2.png
