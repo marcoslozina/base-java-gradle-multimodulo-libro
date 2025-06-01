@@ -19,7 +19,7 @@ Unite al Discord oficial del eBook y conectá con otros lectores:
 
 Tu opinión es clave para seguir mejorando y priorizar nuevos contenidos. Si ya aplicaste lo aprendido o tenés sugerencias, podés:
 
-- 💌 Escribir a: **marcos.lozina.dev@gmail.com**
+- 💌 Escribir a: **marcos.lozina@gmail.com**
 - 🗳️ Completar este formulario anónimo:  
   👉 **[Formulario de Feedback – Base Java Gradle Multimódulo](https://forms.gle/2JT8CqevhfwvwciZA)**
 - 🧑‍💻 Compartir tu experiencia en LinkedIn y etiquetarme: [@marcoslozina](https://www.linkedin.com/in/marcoslozina)

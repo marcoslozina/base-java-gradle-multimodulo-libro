@@ -3,7 +3,7 @@
 
 El proyecto completo utilizado como referencia en este eBook se encuentra publicado en GitHub:
 
-👉 **[github.com/marcoslozina/gradle-profesional-ejemplo](https://github.com/marcoslozina/base-java-gradle-multimodulo)**
+👉 **[github.com/marcoslozina/base-java-gradle-multimodulo](https://github.com/marcoslozina/base-java-gradle-multimodulo)**
 
 Este repositorio constituye una base profesional para proyectos en Java con Spring Boot, incorporando una estructura moderna, tareas automatizadas y convenciones escalables, ideal para equipos que trabajan con microservicios o aplicaciones de mediana a gran escala.
 
