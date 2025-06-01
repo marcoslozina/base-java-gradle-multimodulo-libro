@@ -1,9 +1,7 @@
-
-
 <p align="center">
-  <img src="images/portada2.png"  width="400"/>
+  <img src="es/images/portada2.png" alt="Portada del eBook" />
 </p>
 
-**Java Multimódulo para Backends Modernos**  
-**Marcos Raimundo Lozina**  
-v1.0 – Mayo 2025
+<p align="center"><strong>Java Multimódulo para Backends Modernos</strong></p>
+<p align="center"><strong>Marcos Raimundo Lozina</strong></p>
+<p align="center">v1.0 – Mayo 2025</p>

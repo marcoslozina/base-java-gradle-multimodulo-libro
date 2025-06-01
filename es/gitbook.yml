@@ -8,6 +8,6 @@ languages:
   es:
     label: Español
     path: .
-    title: " "               # Esto evita que GitBook genere una portada con el título "Java Multimódulo"
+    title: ""               # Esto evita que GitBook genere una portada con el título "Java Multimódulo"
     author: Marcos Lozina
     cover: es/images/portada2.png
