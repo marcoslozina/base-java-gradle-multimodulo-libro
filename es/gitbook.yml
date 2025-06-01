@@ -1,6 +1,6 @@
 root: .
 structure:
-  readme: es.md
+  readme: ./00-resumen.md
   summary: SUMMARY.md
 languages:
   es:

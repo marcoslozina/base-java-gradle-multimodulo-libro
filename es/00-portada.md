@@ -1,6 +1,10 @@
-# Java Multimódulo para Backends Modernos
+<!-- 00-portada.md -->
 
-**Marcos Lozina**  
-📘 eBook Técnico – 2025
+<p align="center">
+  <img src="es/images/portada2.png" alt="Portada del eBook" width="600"/>
+</p>
 
-![Portada](images/portada2.png)
+<h1 align="center">Java Multimódulo para Backends Modernos</h1>
+<h3 align="center">Marcos Raimundo Lozina</h3>
+
+<p align="center">v1.0 – Mayo 2025</p>
