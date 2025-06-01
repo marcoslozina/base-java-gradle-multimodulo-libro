@@ -1,3 +1,5 @@
+<img src="images/portada2.png" alt="Portada del eBook" width="600"/>
+
 # 📘 Java Multimódulo para Backends Modernos
 
 Este proyecto es una base profesional para desarrollar aplicaciones en **Java 21** con **Gradle Kotlin DSL**, siguiendo buenas prácticas modernas de modularización, automatización y arquitectura limpia.  
